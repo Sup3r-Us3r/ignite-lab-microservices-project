@@ -1,14 +1,17 @@
 {
   "folders": [
-	{
-		"path": "classroom"
-	},
-	{
-		"path": "purchases"
-	},
-	{
-		"path": "web"
-	}
-],
+    {
+      "path": "classroom"
+    },
+    {
+      "path": "purchases"
+    },
+    {
+      "path": "web"
+    },
+    {
+      "path": "gateway"
+    }
+  ],
   "settings": {}
 }
