@@ -1,29 +1,56 @@
 # Ignite Lab
 
+![landing-page](.github/landing-page.png)
+
+- Auth0
 - NestJS
 - GraphQL
 - Apache Kafka
 - Next.js
 - Apollo Client (GraphQL)
 
-## Funcionalidades
+## Functionalities
 
-### Serviço de compras (purchases)
+### Purchases Microservice
 
-- [Admin] Cadastro de produtos
-- [Admin] Listagem de produtos
+- [Admin] Register product
+- [Admin] List products
 
-- [Auth] Listagem de compras
+- [Auth] List purchases
 
-- [Public] Compra de um produto
-- [Public] Lista produtos disponíveis p/ compra
+- [Public] Purchase a product
+- [Public] List of products available for purchase
 
-### Serviço de sala de aula (classroom)
+### Classroom Microservice
 
-- [Admin] Listar matrículas
-- [Admin] Listar alunos
-- [Admin] Listar cursos
-- [Admin] Cadastrar cursos
+- [Admin] List enrollments
+- [Admin] List students
+- [Admin] List courses
+- [Admin] Register course
 
-- [Auth] Listar cursos que tenho acesso
-- [Auth] Acessar conteúdo do curso
+- [Auth] List courses I have access to
+- [Auth] Access course content
+
+### Run project
+
+```bash
+$ https://github.com/Sup3r-Us3r/ignite-lab-microservices-project.git
+$ cd ignite-lab-microservices-project
+$ docker-compose up -d
+
+// Inside the classroom microservice run:
+$ cd classroom
+$ npm run start:dev // or yarn start:dev
+
+// Inside the purchases microservice run:
+$ cd purchases
+$ npm run start:dev // or yarn start:dev
+
+// Inside the apollo gateway run:
+$ cd gateway
+$ npm run start:dev // or yarn start:dev
+
+// Inside the web (frontend) run:
+$ cd web
+$ npm run dev // or yarn dev
+```
